@@ -111,7 +111,7 @@ uint8_t (*endTransaction)(void*);
 ```
 </tr>
 </table>
-
+Either the transmit and receive function or the transceive function must be implemented by the peripheral and IC driver.For example, the I2C bus hardly can both send and receive at the same time. Using these differences compared to other interfaces, an IC driver can differentiate between different bus types without additional initialisation parameters. Check out the MCP23x17 driver implementation as example (Todo: Upload driver to git and link it here)
 ## Function explanation
 ___
 ### Interface Prepare
